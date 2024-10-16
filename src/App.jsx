@@ -4,8 +4,9 @@ import ContactList from "./components/ContactList/ContactList";
 import "./App.css";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
-import { fetchContacts } from "./redux/contactsOps";
+import { fetchContacts } from "./redux/contacts/operations";
 import { FaAddressBook } from "react-icons/fa6";
+
 
 function App() {
   const dispatch = useDispatch();
