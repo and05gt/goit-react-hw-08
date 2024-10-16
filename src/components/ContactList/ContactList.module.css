@@ -1,0 +1,15 @@
+.contactListWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.listItem {
+  width: calc((100% - 48px) / 4);
+}
