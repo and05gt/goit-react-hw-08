@@ -1,0 +1,31 @@
+.userMenuWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.username {
+  padding: 16px 0;
+  font-size: 20px;
+}
+
+.btnLogout {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #4e75ff;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  padding: 8px;
+  display: block;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
+  height: 36px;
+}
+
+.btnLogout:hover,
+.btnLogout:focus {
+  background-color: #6c8cff;
+}
