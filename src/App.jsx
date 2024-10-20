@@ -29,7 +29,7 @@ function App() {
     <Loader />
   ) : (
     <div className="container">
-      <Suspense fallback={<h2>Loading...</h2>}>
+      <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
