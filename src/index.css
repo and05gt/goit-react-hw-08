@@ -48,6 +48,10 @@ img {
   height: auto;
 }
 
+.toaster {
+  margin-top: 56px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #000000;

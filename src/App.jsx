@@ -33,7 +33,15 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
-            <Route path="register" element={<RegistrationPage />} />
+            <Route
+              path="register"
+              element={
+                <RestrictedRoute
+                  component={<RegistrationPage />}
+                  redirectTo="/contacts"
+                />
+              }
+            />
             <Route
               path="login"
               element={

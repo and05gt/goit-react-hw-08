@@ -4,6 +4,7 @@ import ContactList from "../../components/ContactList/ContactList";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { fetchContacts } from "../../redux/contacts/operations";
+import { Toaster } from "react-hot-toast";
 
 const ContactsPage = () => {
   const dispatch = useDispatch();
@@ -17,6 +18,11 @@ const ContactsPage = () => {
       <ContactForm />
       <SearchBox />
       <ContactList />
+      <Toaster
+        containerClassName="toaster"
+        position="top-center"
+        reverseOrder={false}
+      />
     </div>
   );
 };

@@ -5,6 +5,7 @@ import { selectError, selectLoading } from "../../redux/contacts/selectors";
 import style from "./ContactList.module.css";
 import { deleteContact } from "../../redux/contacts/operations";
 import Loader from "../Loader/Loader";
+import toast from "react-hot-toast";
 
 const ContactList = () => {
   const contacts = useSelector(selectFilteredContacts);
@@ -23,7 +24,12 @@ const ContactList = () => {
               <Contact
                 name={contact.name}
                 number={contact.number}
-                onDelete={() => dispatch(deleteContact(contact.id))}
+                onDelete={() =>
+                  dispatch(
+                    deleteContact(contact.id),
+                    toast.success("Contact successfully deleted!")
+                  )
+                }
               />
             </li>
           );
